@@ -27,8 +27,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOh-QG-Wsm">
-                                <rect key="frame" x="277" y="499" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOh-QG-Wsm">
+                                <rect key="frame" x="281" y="540" width="39" height="30"/>
                                 <state key="normal" title="Menu"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R2O-Wm-wc8"/>
@@ -43,6 +43,8 @@
                             <constraint firstItem="uWu-lx-9yl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EeL-fF-LW0"/>
                             <constraint firstItem="4t3-3c-3Vb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mho-Lb-XMe"/>
                             <constraint firstAttribute="trailing" secondItem="uWu-lx-9yl" secondAttribute="trailing" id="OZQ-gn-RXb"/>
+                            <constraint firstItem="OOh-QG-Wsm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h6r-QU-tug"/>
+                            <constraint firstAttribute="bottom" secondItem="OOh-QG-Wsm" secondAttribute="bottom" constant="30" id="u4T-AU-d4t"/>
                         </constraints>
                     </view>
                 </viewController>
