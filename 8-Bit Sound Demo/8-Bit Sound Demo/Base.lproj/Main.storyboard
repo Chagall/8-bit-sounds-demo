@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="blade.ttf">
+            <string>BladeRunnerMovieFont</string>
+        </mutableArray>
+        <mutableArray key="karmatic-arcade.ttf">
+            <string>KarmaticArcade</string>
+            <string>KarmaticArcade</string>
+            <string>KarmaticArcade</string>
+            <string>KarmaticArcade</string>
+            <string>KarmaticArcade</string>
+            <string>KarmaticArcade</string>
+            <string>KarmaticArcade</string>
+            <string>KarmaticArcade</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="__Bit_Sounds" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="city" translatesAutoresizingMaskIntoConstraints="NO" id="uWu-lx-9yl">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="8-Bit Sounds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vfv-nn-tBf">
+                                <rect key="frame" x="89" y="10" width="423" height="54"/>
+                                <fontDescription key="fontDescription" name="BladeRunnerMovieFont" family="Blade Runner Movie Font" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="0.87155172413793103" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="-12" y="10" width="424" height="54"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOh-QG-Wsm" userLabel="MenuButton">
+                                <rect key="frame" x="272" y="550" width="57" height="30"/>
+                                <fontDescription key="fontDescription" name="KarmaticArcade" family="Karmatic Arcade" pointSize="16"/>
+                                <state key="normal" title="Menu"/>
+                                <connections>
+                                    <action selector="onMenuButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z5W-1x-aRm"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6B-B8-njw">
+                                <rect key="frame" x="266" y="351" width="69" height="29"/>
+                                <fontDescription key="fontDescription" name="KarmaticArcade" family="Karmatic Arcade" pointSize="15"/>
+                                <state key="normal" title="LOSE 2"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="166" y="342" width="69" height="29"/>
+                                </variation>
+                                <connections>
+                                    <action selector="onLoseTwoTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rtN-5N-v5b"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEf-0H-1a2">
+                                <rect key="frame" x="267" y="314" width="68" height="29"/>
+                                <fontDescription key="fontDescription" name="KarmaticArcade" family="Karmatic Arcade" pointSize="15"/>
+                                <state key="normal" title="LOSE 1"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="166" y="305" width="68" height="29"/>
+                                </variation>
+                                <connections>
+                                    <action selector="onLoseOneTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iGw-oM-324"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJC-eW-RFN">
+                                <rect key="frame" x="276" y="277" width="50" height="29"/>
+                                <fontDescription key="fontDescription" name="KarmaticArcade" family="Karmatic Arcade" pointSize="15"/>
+                                <state key="normal" title="WIN 1"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="176" y="268" width="49" height="29"/>
+                                </variation>
+                                <connections>
+                                    <action selector="onWinOneTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D8X-8M-OyC"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ybl-m4-Gra">
+                                <rect key="frame" x="276" y="240" width="49" height="29"/>
+                                <fontDescription key="fontDescription" name="KarmaticArcade" family="Karmatic Arcade" pointSize="15"/>
+                                <state key="normal" title="WIN 2"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="176" y="227" width="50" height="29"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="175" y="231" width="50" height="29"/>
+                                </variation>
+                                <connections>
+                                    <action selector="onWinTwoTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M80-va-aED"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7F-LN-ts2">
+                                <rect key="frame" x="224" y="203" width="154" height="29"/>
+                                <fontDescription key="fontDescription" name="KarmaticArcade" family="Karmatic Arcade" pointSize="15"/>
+                                <state key="normal" title="ACHIEVEMENT 1"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="124" y="194" width="153" height="29"/>
+                                </variation>
+                                <connections>
+                                    <action selector="onAchievementOneTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="55S-U8-gXR"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fok-ZJ-y57">
+                                <rect key="frame" x="224" y="166" width="153" height="29"/>
+                                <fontDescription key="fontDescription" name="KarmaticArcade" family="Karmatic Arcade" pointSize="15"/>
+                                <state key="normal" title="ACHIEVEMENT 2"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="124" y="153" width="154" height="29"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="123" y="157" width="154" height="29"/>
+                                </variation>
+                                <connections>
+                                    <action selector="onAchievementTwoTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4nH-K7-IY4"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9t-Nx-lHF">
+                                <rect key="frame" x="251" y="129" width="100" height="29"/>
+                                <fontDescription key="fontDescription" name="KarmaticArcade" family="Karmatic Arcade" pointSize="15"/>
+                                <state key="normal" title="GET POINT"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="150" y="120" width="100" height="29"/>
+                                </variation>
+                                <connections>
+                                    <action selector="onGetPointClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oiP-Ec-aWz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="uWu-lx-9yl" secondAttribute="bottom" id="Dhd-Hh-RXF"/>
+                            <constraint firstItem="Fok-ZJ-y57" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E0e-sb-RYx"/>
+                            <constraint firstItem="uWu-lx-9yl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="EIb-hk-Qst"/>
+                            <constraint firstItem="uWu-lx-9yl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EeL-fF-LW0"/>
+                            <constraint firstItem="Vfv-nn-tBf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HRW-4J-u2V"/>
+                            <constraint firstItem="vEf-0H-1a2" firstAttribute="top" secondItem="sJC-eW-RFN" secondAttribute="bottom" constant="8" id="IGB-jX-qhz"/>
+                            <constraint firstItem="Ybl-m4-Gra" firstAttribute="top" secondItem="W7F-LN-ts2" secondAttribute="bottom" constant="8" id="L3e-eV-vhS"/>
+                            <constraint firstAttribute="trailing" secondItem="uWu-lx-9yl" secondAttribute="trailing" id="OZQ-gn-RXb"/>
+                            <constraint firstItem="n9t-Nx-lHF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UNX-ov-VZa"/>
+                            <constraint firstItem="Vfv-nn-tBf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="10" id="VKi-nb-2LE"/>
+                            <constraint firstItem="sJC-eW-RFN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vfn-RF-EWD"/>
+                            <constraint firstItem="W7F-LN-ts2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XHx-F7-kFw"/>
+                            <constraint firstItem="sJC-eW-RFN" firstAttribute="top" secondItem="Ybl-m4-Gra" secondAttribute="bottom" constant="8" id="XYC-wl-SEi"/>
+                            <constraint firstItem="n9t-Nx-lHF" firstAttribute="top" secondItem="Vfv-nn-tBf" secondAttribute="bottom" constant="65" id="Zpe-mT-5oN"/>
+                            <constraint firstItem="W7F-LN-ts2" firstAttribute="top" secondItem="Fok-ZJ-y57" secondAttribute="bottom" constant="8" id="cC3-KE-hzU"/>
+                            <constraint firstItem="w6B-B8-njw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cLb-T8-egS"/>
+                            <constraint firstItem="vEf-0H-1a2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dBf-He-72K"/>
+                            <constraint firstItem="OOh-QG-Wsm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h6r-QU-tug"/>
+                            <constraint firstItem="w6B-B8-njw" firstAttribute="top" secondItem="vEf-0H-1a2" secondAttribute="bottom" constant="8" id="hN8-Mo-gh0"/>
+                            <constraint firstItem="Vfv-nn-tBf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="lVD-qy-kWM"/>
+                            <constraint firstItem="Fok-ZJ-y57" firstAttribute="top" secondItem="n9t-Nx-lHF" secondAttribute="bottom" constant="8" id="paR-uE-Pdj"/>
+                            <constraint firstAttribute="trailing" secondItem="Vfv-nn-tBf" secondAttribute="trailing" constant="5" id="rhM-Oj-N4M"/>
+                            <constraint firstAttribute="bottom" secondItem="OOh-QG-Wsm" secondAttribute="firstBaseline" constant="30" id="u4T-AU-d4t"/>
+                            <constraint firstItem="Ybl-m4-Gra" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vtr-qQ-R3F"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="lVD-qy-kWM"/>
+                                <exclude reference="rhM-Oj-N4M"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="lVD-qy-kWM"/>
+                                <include reference="rhM-Oj-N4M"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="achievementOneSound" destination="W7F-LN-ts2" id="sPV-WQ-y8Q"/>
+                        <outlet property="achievementTwoSound" destination="Fok-ZJ-y57" id="BO2-wC-fZK"/>
+                        <outlet property="getPointSound" destination="n9t-Nx-lHF" id="dlP-LV-p7Z"/>
+                        <outlet property="loseOneSound" destination="vEf-0H-1a2" id="v3n-w9-Vvf"/>
+                        <outlet property="loseTwoSound" destination="w6B-B8-njw" id="Ko0-kw-jZs"/>
+                        <outlet property="winOneSound" destination="sJC-eW-RFN" id="4jA-MH-xb1"/>
+                        <outlet property="winTwoSound" destination="Ybl-m4-Gra" id="9LT-w7-Jvw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="564" y="477"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="city" width="236" height="393"/>
+    </resources>
+</document>
